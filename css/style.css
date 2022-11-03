@@ -1,44 +1,15 @@
 @charset "UTF-8";
-/*---------------------------
- CSS Index  
-****************************
 
-01. Variables
-02. Typography
-03. Spacing
-04. Reset
-05. Forms
-06. Shortcode
-07. Common
-08. Animations
-09. Text Animation
-10. Header
-11. Nav
-12. Mobilemenu
-13. Rightdemo
-14. Button
-15. Accordion
-16. Section Title
-17. Banner
-18. Service
-19. Modal
-20. Skill
-21. Progressbar
-22. Testimonial
-23. Clients
-24. Pricing
-25. Contact
-26. About
-27. Brand
-28. Footer
-29. Portfolio
-30. Slickstyle
-31. Home Classic
-32. White Version
-----------------------------*/
-/* Default  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@font-face {
+  font-family: Delicious;
+  src: url('Avenir-light.otf');
+}
+
+@font-face {
+  font-family: Delicious;
+  font-weight: bold;
+  src: url('Delicious-Bold.otf');
+}
 
 :root {
   --color-primary: #c96200;
@@ -46,6 +17,7 @@
   --color-tertiary: #0d1013;
   --color-gray: #f6f6f6;
   --color-subtitle: #c96200;
+  --background-color-main: #ECF0F3;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
@@ -129,7 +101,7 @@ body {
   line-height: var(--line-height-b1);
   font-family: var(--font-primary);
   color: var(--color-body);
-  background-color: #ECF0F3;
+  background-color: var(--background-color-main);
   font-weight: var(--p-regular);
 }
 
@@ -510,7 +482,28 @@ ul li a:hover {
 ul ul {
   margin-bottom: 0;
 }
+/* 
+3.052rem/48.83px	
+2.441rem/39.06px	
+1.953rem/31.25px	
+1.563rem/25.00px	
+1.25rem/20.00px	
+1rem/16.00px	
+0.8rem/12.80px	
+0.64rem/10.24px	
+0.512rem/8.19px	
+ */
 
+ 
+
+/*=========================
+    Section styling
+==========================*/
+
+.section-divider{
+  max-width: 1200px;
+  background-color: var(--background-color-2);
+}
 
 /*=========================
     Header section
@@ -520,6 +513,9 @@ ul ul {
   width: 100%;
   position: fixed;
   box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
+  /* background-color: var(--background-color-main); */
+  background: var(--gradient-box-w);
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -551,6 +547,7 @@ ul ul {
 }
 
 .nav-link {
+  color: #181a1d;
   transition: all 300ms;
 }
 
@@ -558,8 +555,39 @@ ul ul {
     Main section
 ==========================*/
 
-.body-height {
-  height: 1000px;
+.main-wrapper{
+  padding: 150px 100px 150px 100px;
+}
+
+.introduction{
+  padding: 50px 0px 50px 0px;
+}
+
+.introduction h3{
+  color: var(--background-color-2);
+  font-size: 45px;
+  font-weight: bolder;
+  line-height: 60px;
+}
+
+.introduction h3 span{
+  color: var(--color-primary);
+}
+
+.description{
+  max-width: 600px;
+  font-size: 15px;
+  color: #3c3e41;
+  font-weight: 500;
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+  border-radius: 20px;
+  border: none;
 }
 
 /*=========================
