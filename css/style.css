@@ -430,11 +430,11 @@ var {
   font-family: "Poppins", sans-serif;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-h5:hover{
+h5:hover {
   text-decoration: none;
   color: var(--color-primary);
 }
@@ -525,7 +525,7 @@ hr.divider {
   box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
   /* background-color: var(--background-color-main); */
   background: linear-gradient(90deg, #e2e8ec, #ffffff);
-  z-index: 1;
+  z-index: 9999;
 }
 
 .header-wrapper {
@@ -600,6 +600,7 @@ hr.divider {
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding: 50px 0px 50px 0px;
 }
 
 .cards-container {
@@ -615,9 +616,32 @@ hr.divider {
   border-radius: 20px;
   border: none;
   overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s ease;
 }
 
-.card-image-container{
+.card:hover{
+  box-shadow: 20px 20px 30px #D1D9E6, -10px -10px 30px #ffffff;
+}
+
+/* .card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(290deg, #dae0e3, #ffffff);
+  z-index: -1;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.card:hover::before {
+  opacity: 1;
+}  */
+
+.card-image-container {
   display: flex;
   justify-content: center;
   height: 255px;
@@ -629,7 +653,7 @@ hr.divider {
   object-fit: cover;
 }
 
-.card-details{
+.card-details {
   padding: 30px;
 }
 
@@ -641,7 +665,7 @@ hr.divider {
   font-size: 14px;
 }
 
-.card h5{
+.card h5 {
   font-weight: 600;
   font-size: 25px;
   padding: 10px 0px 0px 0px;
