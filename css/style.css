@@ -439,6 +439,10 @@ h5:hover {
   color: var(--color-primary);
 }
 
+h2{
+  color: #3c3e41;
+}
+
 /*---------------------------
 	List Style 
 ---------------------------*/
@@ -597,10 +601,15 @@ hr.divider {
 
 .portfolio-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
+}
+
+.portfolio-container h2{
+  padding-bottom: 50px;
 }
 
 .cards-container {
