@@ -19,6 +19,7 @@
   --color-subtitle: #c96200;
   --background-color-main: #ECF0F3;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
+  --text-color-primary: linear-gradient(145deg, #c96200, #fc7b00);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
     -10px -10px 19px #262a2e;
@@ -534,7 +535,7 @@ hr.divider {
 
 .header-wrapper {
   display: flex;
-  height: 90px;
+  height: 70px;
   padding: 0 64px;
 
 }
@@ -589,7 +590,9 @@ hr.divider {
 }
 
 .introduction h3 span {
-  color: var(--color-primary);
+  background: var(--text-color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .description {
@@ -612,7 +615,7 @@ hr.divider {
   padding-bottom: 50px;
 }
 
-.portfolio-header{
+.portfolio-header {
   display: flex;
   width: 100%;
   padding-left: 30px;
@@ -635,7 +638,7 @@ hr.divider {
   overflow: hidden;
   z-index: 1;
   transition: all 0.5s ease;
- 
+
 }
 
 .card:hover {
@@ -665,13 +668,13 @@ hr.divider {
   height: 255px;
   width: 100%;
   margin-bottom: 20px;
+  border-radius: 15px;
 }
 
 .card img {
   border-radius: 15px;
   max-width: 100%;
   object-fit: cover;
-  
 }
 
 .card span {
