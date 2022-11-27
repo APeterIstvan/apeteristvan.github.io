@@ -758,3 +758,34 @@ hr.divider {
     height: 255px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .header-wrapper {
+    padding: 20px;
+  }
+
+  .main-wrapper{
+    padding: 50px 20px;
+  }
+
+  .introduction {
+    padding: 50px 0px 50px 0px;
+  }
+  
+  .introduction h3 {
+    color: var(--background-color-2);
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: normal;
+  }
+
+  .cards-container {
+    grid-template-columns: 300px;
+    grid-template-rows: 325px;
+    gap: 30px;
+  }
+
+  .card-image-container {
+    height: 175px;
+  }
+}
