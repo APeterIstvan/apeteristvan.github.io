@@ -724,3 +724,37 @@ hr.divider {
 .footer .footer-wrapper .description {
   font-size: 15px;
 }
+
+@media only screen and (max-width: 1285.60px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 375px 375px 375px;
+    gap: 30px;
+  }
+
+  .card-image-container {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 375px 375px;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 425px;
+    gap: 30px;
+  }
+  .card-image-container {
+    height: 255px;
+  }
+}
