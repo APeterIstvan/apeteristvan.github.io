@@ -17,40 +17,40 @@
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@200;300&display=swap"
         rel="stylesheet">
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
 
     <!-- Begin Header -->
-    <header class="header">
-        <div class="header-wrapper">
-            <!-- Begin Header Left -->
-            <div class="header-left">
-                <div class="logo">
-                    <a href="./index.html">
-                        <img src="./assets/images/PA_icon_bold_color.png" alt="logo" style="height:60px;width:60px">
-                    </a>
-                </div>
-            </div>
+    <header class="header nav-open">
 
-            <!-- End Header Left -->
-            <!-- Begin Header Center -->
-            <div class="header-right">
-                <nav id="sideNav">
-                    <!-- Begin Nav -->
-                    <ul class="header-nav-ul">
-                        <li class="nav-item current"><a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="./index.html#portfolio">Portfolio</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">About me</a>
-                        </li>
-                    </ul>
-                    <!-- End Nav -->
-                </nav>
-                <!-- End Header Center -->
-            </div>
-        </div>
+        <!-- Begin Header Left -->
+        <a href="./index.html" class="logo">
+            <img src="./assets/images/PA_icon_bold_color.png" alt="logo" style="height:60px;width:60px">
+        </a>
+        <!-- End Header Left -->
+        <!-- Begin Nav -->
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About me</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Nav -->
+        <button class="btn-mobile-nav">
+                <img class="icon-mobile-nav" name="menu-outline" src="./assets/images/menu.png" ,
+                    style="height: 30px;width: 30px;">
+                </img>
+
+                <icon class="icon-mobile-nav" name="close-outline">
+                </icon>
+
+            </button>
     </header>
     <!-- End Header Area -->
 
@@ -124,7 +124,8 @@
                 <!-- End Individual Card -->
                 <!-- Begin Individual Card -->
                 <div class="card">
-                    <a href="https://github.com/APeterIstvan/Artificial-Intelligence/tree/main/semester_assignment" target="_blank">
+                    <a href="https://github.com/APeterIstvan/Artificial-Intelligence/tree/main/semester_assignment"
+                        target="_blank">
                         <div class="card-image-container">
                             <img src="assets/images/flow-shop.jpg" alt="flow-shop">
                         </div>
